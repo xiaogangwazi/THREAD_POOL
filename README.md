@@ -300,7 +300,7 @@ public class BasicThreadPool extends Thread implements ThreadPool{
             return runnableQueue.size();
         }
     }
-
+//默认的线程工厂类
     private static class DefaultThreadFactory  implements  ThreadFactory{
         private static  final AtomicInteger GROUP_COUNTER=new AtomicInteger(1);
         private static  final  ThreadGroup group  = new ThreadGroup("MyThreadOPool"+GROUP_COUNTER.getAndDecrement());
